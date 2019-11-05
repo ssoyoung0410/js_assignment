@@ -41,23 +41,15 @@ var data =
     "src3": "https://instagram.ficn1-1.fna.fbcdn.net/vp/f739d4cdda6e9458bc48a57736effca2/5E57C84B/t51.2885-15/sh0.08/e35/c0.112.901.901a/s640x640/75642480_172471183930322_5768703040712176780_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_cat=1"
   }
 ]
-// console.log(data[0].src1);
-// console.log(data[1])
 
 for (var i = 0; i < data.length; i++) {
-   console.log(data[i].src1);
-   console.log(data[i].src2);
-   console.log(data[i].src3);
-
+    const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
+    <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data[i].src1}" style="object-fit: cover;"></div>
+    <div class="_9AhH0"></div></div><div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
+    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data[i].src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+    <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div>
+    <div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
+    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data[i].src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+    <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div></div>`
+    document.getElementById('app').innerHTML += img;
 }
-//<img src=${data[0].src1}><img src=${data[0].src2}>
-const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
-<div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data[0].src1}" style="object-fit: cover;"></div>
-<div class="_9AhH0"></div></div><div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
-<div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data[0].src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
-<div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div>
-<div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
-<div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data[0].src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
-<div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div></div>`
-
-document.getElementById('app').innerHTML = img;
