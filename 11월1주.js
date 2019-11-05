@@ -42,14 +42,14 @@ var data =
   }
 ]
 
-for (var i = 0; i < data.length; i++) {
+data.forEach(data => {
     const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
-    <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data[i].src1}" style="object-fit: cover;"></div>
+    <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src1}" style="object-fit: cover;"></div>
     <div class="_9AhH0"></div></div><div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
-    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data[i].src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
     <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div>
     <div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
-    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data[i].src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
     <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div></div>`
     document.getElementById('app').innerHTML += img;
-}
+})
