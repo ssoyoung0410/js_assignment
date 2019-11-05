@@ -103,7 +103,10 @@ dataList4.forEach(data => {
 })
 
 // FIXME 지금 위 로직은 아래와 같습니다 - 재사용할 수 없습니다
-console.log('재사용불가')
+console.log('재사용불가1')
+console.log('재사용불가2')
+console.log('재사용불가3')
+console.log('재사용불가4')
 // TODO 아래와 같이 함수로 만들어주세요 - 재사용할 수 있습니다
 const test = function(data) {
     console.log(data)
@@ -111,6 +114,7 @@ const test = function(data) {
 test('재사용가능1')
 test('재사용가능2')
 test('재사용가능3')
+test('재사용가능4')
 // TODO 아래라인 호출시 원래 로직과 동일하게 동작하도록 만들어주세요
 render('app', dataList1)
 render('app', dataList2)
