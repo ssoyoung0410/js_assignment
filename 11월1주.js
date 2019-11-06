@@ -54,64 +54,70 @@ const dataList4 =
   }
 ]
 
-dataList1.forEach(data => {
-    const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
-    <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src1}" style="object-fit: cover;"></div>
-    <div class="_9AhH0"></div></div><div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
-    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
-    <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div>
-    <div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
-    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
-    <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div></div>`
-    document.getElementById('app').innerHTML += img;
-})
+// dataList1.forEach(data => {
+//     const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
+//     <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src1}" style="object-fit: cover;"></div>
+//     <div class="_9AhH0"></div></div><div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
+//     <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+//     <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div>
+//     <div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
+//     <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+//     <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div></div>`
+//     document.getElementById('app').innerHTML += img;
+// })
 
-dataList2.forEach(data => {
-    const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
-    <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src1}" style="object-fit: cover;"></div>
-    <div class="_9AhH0"></div></div><div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
-    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
-    <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div>
-    <div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
-    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
-    <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div></div>`
-    document.getElementById('app').innerHTML += img;
-})
+// // dataList2.forEach(data => {
+// //     const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
+// //     <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src1}" style="object-fit: cover;"></div>
+// //     <div class="_9AhH0"></div></div><div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
+// //     <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+// //     <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div>
+// //     <div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
+// //     <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+// //     <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div></div>`
+// //     document.getElementById('app').innerHTML += img;
+// // })
 
-dataList3.forEach(data => {
-    const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
-    <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src1}" style="object-fit: cover;"></div>
-    <div class="_9AhH0"></div></div><div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
-    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
-    <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div>
-    <div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
-    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
-    <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div></div>`
-    document.getElementById('app').innerHTML += img;
-})
+// // dataList3.forEach(data => {
+// //     const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
+// //     <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src1}" style="object-fit: cover;"></div>
+// //     <div class="_9AhH0"></div></div><div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
+// //     <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+// //     <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div>
+// //     <div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
+// //     <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+// //     <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div></div>`
+// //     document.getElementById('app').innerHTML += img;
+// // })
 
-dataList4.forEach(data => {
-    const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
-    <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src1}" style="object-fit: cover;"></div>
-    <div class="_9AhH0"></div></div><div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
-    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
-    <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div>
-    <div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
-    <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
-    <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div></div>`
-    document.getElementById('app').innerHTML += img;
-})
+// // dataList4.forEach(data => {
+// //     const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
+// //     <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src1}" style="object-fit: cover;"></div>
+// //     <div class="_9AhH0"></div></div><div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
+// //     <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+// //     <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div>
+// //     <div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
+// //     <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+// //     <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div></div>`
+// //     document.getElementById('app').innerHTML += img;
+// // })
 
-// FIXME 지금 위 로직은 아래와 같습니다 - 재사용할 수 없습니다
-console.log('재사용불가')
-// TODO 아래와 같이 함수로 만들어주세요 - 재사용할 수 있습니다
-const test = function(data) {
-    console.log(data)
-}
-test('재사용가능1')
-test('재사용가능2')
-test('재사용가능3')
+
 // TODO 아래라인 호출시 원래 로직과 동일하게 동작하도록 만들어주세요
+const render = function (app,list) {
+      list.forEach(data => {
+          const app = document.getElementById('app');
+          const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
+          <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src1}" style="object-fit: cover;"></div>
+          <div class="_9AhH0"></div></div><div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
+          <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src2}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+          <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div>
+          <div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;">
+          <div class="eLAPa"><div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src3}" style="object-fit: cover;"></div><div class="_9AhH0"></div></div>
+          <div class="u7YqG"><span aria-label="슬라이드" class="mediatypesSpriteCarousel__filled__32 u-__7"></span></div></a></div></div>`
+          app.innerHTML += img;
+        })
+}
 render('app', dataList1)
 render('app', dataList2)
 render('app', dataList3)
