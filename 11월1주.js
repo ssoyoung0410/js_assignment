@@ -117,7 +117,17 @@ const render = function(list) {
       })
       app.innerHTML += img;
 }
-render(dataList1);
-render(dataList2);
-render(dataList3);
-render(dataList4);
+// render(dataList1);
+// render(dataList2);
+// render(dataList3);
+// render(dataList4);
+
+// TODO API에서 받아온 데이터를 사용하도록 수정 해보세요!
+axios('https://my-json-server.typicode.com/it-crafts/mockapi/timeline?_page=1')
+.then(function(res) {
+    console.log(res.data);
+})
+axios('https://my-json-server.typicode.com/it-crafts/mockapi/timeline?_page=2')
+.then(function(res) {
+    console.log(res.data);
+})
