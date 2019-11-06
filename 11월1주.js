@@ -78,7 +78,6 @@ const dataList4 =
 // //     document.getElementById('app').innerHTML += img;
 // // })
 
-
 // // dataList3.forEach(data => {
 // //     const img = `<div class="Nnq7C weEfm"><div class="v1Nh3 kIKUG _bz0w"><a href="javascript:;"><div class="eLAPa">
 // //     <div class="KL4Bh"><img class="FFVAD" decoding="auto" src="${data.src1}" style="object-fit: cover;"></div>
