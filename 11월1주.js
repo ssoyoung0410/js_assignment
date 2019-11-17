@@ -1,6 +1,3 @@
-
-
-
 const _loading = document.querySelector('._4emnV');
    
 const timeline = (function() {
@@ -18,27 +15,29 @@ const timeline = (function() {
     let totalPage = 1;
 
     const init = async function() {
-        moreTimeline();
+        page = 1;
         axios(url + 'info').then(({data}) => {
             totalPage = data.data.totalPage;
         })
+        moreTimeline();
     }
 
     const reset = async function() {
         app.innerHTML = '';
-        page = 1;
     }
 
     window.addEventListener('scroll', async function(e) {
+        if($(window).scrollTop() != $(document).height() - $(window).height()) {
+            return;
+        }
         if('' === _loading.style.display) {
             return;
         }
         if(page > totalPage) {
             return;
         }
-        if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-            moreTimeline();
-        }
+
+        moreTimeline();
     });
 
     const moreTimeline = async function() {
@@ -59,19 +58,14 @@ const timeline = (function() {
     }
 }());
 
+timeline.init();
 
-const root = (function() {
-    timeline.init();
-
-    document.querySelectorAll('.fx7hk > a').forEach(tabButton => {
-        tabButton.addEventListener('click', async function(e) {
-            if('' === _loading.style.display) {
-                return;
-            }
-           _loading.style.display = '';
-           timeline.reset();
-           timeline.init();
-           _loading.style.display = 'none'; 
-       });
-    });
-}());
+document.querySelectorAll('.fx7hk > a').forEach(tabButton => {
+    tabButton.addEventListener('click', async function(e) {
+        if('' === _loading.style.display) {
+            return;
+        }
+       timeline.reset();
+       timeline.init();
+   });
+});
