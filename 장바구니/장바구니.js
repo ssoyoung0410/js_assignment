@@ -7,15 +7,48 @@ const product = [
     {name: '상품5' , price : 8000 , quantity:1}
 ];
 
+//총수량 , 총가격
+const total = document.querySelector('.sum');
+total.innerHTML = `
+<div
+   aria-labelledby="f3d9261c43ccaf4 f143a2cc28ff4ec"
+   class=" Igw0E rBNOH eGOV_ ybXk5 _4EzTm XfCBB HVWg4 ">
+        <div class=" Igw0E IwRSH eGOV_ _4EzTm yC0tu "></div>
+           <div class=" Igw0E IwRSH YBx95 vwCYk ">
+             <div class=" Igw0E IwRSH eGOV_ _4EzTm " id="f3d9261c43ccaf4">
+                <div class="_7UhW9 xLCgt MMzan KV-D4 uL8Hv ">
+                   <div class="_7UhW9 xLCgt qyrsm KV-D4 uL8Hv">
+                      전체상품 개
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class=" Igw0E IwRSH eGOV_ _4EzTm DhRcB "
+                  id="f143a2cc28ff4ec">
+                  <div class="_7UhW9 xLCgt MMzan _0PwGv uL8Hv">
+                    합계금액 원
+                  </div>
+                </div>
+              </div>
+              <div class=" Igw0E rBNOH YBx95 ybXk5 _4EzTm soMvl ">
+                <button class="sqdOP L3NKy y3zKF " type="button">주문</button>
+              </div>
+            </div>
+            <div class=" Igw0E IwRSH eGOV_ _4EzTm HVWg4 ">
+              <hr class="W4P49" />
+</div>`
 
- //장바구니
+
+//장바구니
 const cart = document.querySelector('.cart');
+
+function sum(quantity,price) {
+    return quantity * price;
+}
 
 product.forEach(function(e){
     //console.log(e);
-    function total(quantity,price) {
-        return quantity * price;
-      }
+  
     const template = `
     <li class="wo9IH">
     <div class="uu6c_">
@@ -46,7 +79,7 @@ product.forEach(function(e){
                 >${e.name}</a
             >
             </div>
-            <div class="wFPL8 "> ${e.price}원 × ${e.quantity}개 ＝  ${total(e.quantity,e.price)}원</div>
+            <div class="wFPL8 "> ${e.price}원 × ${e.quantity}개 ＝  ${sum(e.quantity,e.price)}원</div>
         </div>
         </div>
         <div class="Pkbci">
@@ -69,49 +102,14 @@ product.forEach(function(e){
     </li>`;
     
    cart.innerHTML += template;
+
 })
 
-
-
-
-//총수량 , 총가격
- const sum = document.querySelector('.sum');
- sum.innerHTML = `
- <div
-    aria-labelledby="f3d9261c43ccaf4 f143a2cc28ff4ec"
-    class=" Igw0E rBNOH eGOV_ ybXk5 _4EzTm XfCBB HVWg4 ">
-         <div class=" Igw0E IwRSH eGOV_ _4EzTm yC0tu "></div>
-            <div class=" Igw0E IwRSH YBx95 vwCYk ">
-              <div class=" Igw0E IwRSH eGOV_ _4EzTm " id="f3d9261c43ccaf4">
-                 <div class="_7UhW9 xLCgt MMzan KV-D4 uL8Hv ">
-                    <div class="_7UhW9 xLCgt qyrsm KV-D4 uL8Hv">
-                       전체상품 개
-                     </div>
-                   </div>
-                 </div>
-                 <div
-                   class=" Igw0E IwRSH eGOV_ _4EzTm DhRcB "
-                   id="f143a2cc28ff4ec">
-                   <div class="_7UhW9 xLCgt MMzan _0PwGv uL8Hv">
-                     합계금액 원
-                   </div>
-                 </div>
-               </div>
-               <div class=" Igw0E rBNOH YBx95 ybXk5 _4EzTm soMvl ">
-                 <button class="sqdOP L3NKy y3zKF " type="button">주문</button>
-               </div>
-             </div>
-             <div class=" Igw0E IwRSH eGOV_ _4EzTm HVWg4 ">
-               <hr class="W4P49" />
- </div>`
- 
-
-
-
-
+//버튼 클릭시 증가, 감소 
 const p = document.querySelector('.plus');
 p.addEventListener('click', function() {
-  
+  product[0].quantity+=1;
 
+  
 })
 
