@@ -50,6 +50,7 @@ const timeline = (function() {
         })
         app.innerHTML += html;
         _loading.style.display = 'none'; 
+        //console.log(list);
     }
 
     return {
