@@ -1,18 +1,21 @@
 
 const product = [
-    {name: '상품1' , price : 5000 , quantity:1},
-    {name: '상품2' , price : 6000 , quantity:1},
-    {name: '상품3' , price : 2000 , quantity:1},
-    {name: '상품4' , price : 8000 , quantity:1},
+    {name: '상품1' , price : 3000 , quantity:1},
+    {name: '상품2' , price : 6000 , quantity:3},
+    {name: '상품3' , price : 2000 , quantity:7},
+    {name: '상품4' , price : 8000 , quantity:4},
     {name: '상품5' , price : 8000 , quantity:1}
 ];
 
 
+ //장바구니
 const cart = document.querySelector('.cart');
 
 product.forEach(function(e){
     //console.log(e);
-    
+    function total(quantity,price) {
+        return quantity * price;
+      }
     const template = `
     <li class="wo9IH">
     <div class="uu6c_">
@@ -43,7 +46,7 @@ product.forEach(function(e){
                 >${e.name}</a
             >
             </div>
-            <div class="wFPL8 "> ${e.price}원 × ${e.quantity}개 ＝  원</div>
+            <div class="wFPL8 "> ${e.price}원 × ${e.quantity}개 ＝  ${total(e.quantity,e.price)}원</div>
         </div>
         </div>
         <div class="Pkbci">
@@ -69,35 +72,9 @@ product.forEach(function(e){
 })
 
 
- //장바구니
- 
 
 
-// const sum = product.quantity.reduce((pre,value,idx,arr) => {
-//     //console.log(pre)//처음값
-//     //console.log(value) //나머지값
-//     //console.log(idx); //처리되고있는요소의 인덱스
-//     //console.log(arr);
-// });
-
-
-// function Product(name,price,quantity) {
-//     this.name = name;
-//     this.price = price;
-//     this.quantity = quantity;
-//     this.total = function() {
-//         return this.price * this.quantity;
-//     };
-//  }
- 
-//  const data1 = new Product('상품1',1000,1); 
-//  const data2 = new Product('상품2',5000,1);
-//  const data3 = new Product('상품3',6000,1);
-//  const data4 = new Product('상품4',4000,1);
-//  const data5 = new Product('상품5',3000,1);
-
-
-//  //총수량 , 총가격
+//총수량 , 총가격
  const sum = document.querySelector('.sum');
  sum.innerHTML = `
  <div
